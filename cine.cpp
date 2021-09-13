@@ -3,7 +3,7 @@
 Cine::Cine()
 {
     this->idPelicula = 0;
-
+   //Informacion de cada una de las Peliculas datos quemados.
     this->cartelera[0] = new Pelicula(1," El Rey Leon ",117,1,"14:30");
     this->cartelera[1] = new Pelicula(2," Spiderman: Lejos de Casa ",130,1,"16:00");
     this->cartelera[2] = new Pelicula(3," Annabelle 3: Vuelve a Casa ",106,1,"18:20");
@@ -13,7 +13,7 @@ Cine::Cine()
 void Cine::mostrarCartelera()
 {
     cout << "\n- - C A R T E L E R A - -" << endl;
-    for(int i = 0; i <this->peliculasIngresadas; i++){
+    for(int i = 0; i <this->totalPeliculas; i++){
         cout << cartelera[i]->getDatos();
     }
     cout << endl;
